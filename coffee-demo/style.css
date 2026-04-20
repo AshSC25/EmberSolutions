@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #F5F0E8;
+    color: #3B2A1A;
+  }
+  
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background-color: #3B2A1A;
+  }
+  
+  .logo {
+    color: #F5F0E8;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  nav ul a {
+    color: #F5F0E8;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  nav ul a:hover {
+    color: #C45C2A;
+  }
+  
+  /* HERO */
+  #hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #E8DFC8;
+    padding: 2rem;
+  }
+  
+  #hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  #hero a {
+    background-color: #C45C2A;
+    color: #F5F0E8;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
