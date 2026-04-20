@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--nav-->
+  <nav>
+    <h1 class="logo">Unreal Coffee</h1>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </nav>
+
+  <!--intro-->
+  <section id="intro">
+    <h2>Crafted with care,<br>ready when you are.</h2>
+    <a href="#order">Order Now</a>
+  </section>
+
+  <!--order form-->
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Your name" required>
+      <select id="drink" required>
+        <option value="">Select a drink</option>
+        <option value="Latte">Latte</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Cold Brew">Cold Brew</option>
+        <option value="Matcha Latte">Matcha Latte</option>
+      </select>
+      <select id="size" required>
+        <option value="">Select a size</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <!--receipt-->
+  <section id="receipt" style="display:none;">
+    <h2>Thanks, <span id="customerName"></span>!</h2>
+    <p>Your <span id="orderSummary"></span> will be ready at <span id="pickupTime"></span>.</p>
+    <p>A receipt has been sent to the counter.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
